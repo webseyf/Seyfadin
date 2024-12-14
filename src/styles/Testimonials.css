@@ -1,0 +1,117 @@
+/* Testimonials.css */
+
+.testimonials {
+  padding: 4rem 2rem;
+  
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #4db8ff;
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-card {
+  flex: 0 0 300px;
+  background: #1f2a3c;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  scroll-snap-align: start;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.testimonial-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #4db8ff;
+}
+
+.testimonial-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #4db8ff;
+}
+
+.testimonial-role {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #d3d3d3;
+}
+
+.testimonial-feedback {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #d3d3d3;
+}
+
+.testimonial-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  font-size: 1.2rem;
+  color: #d3d3d3;
+}
+
+.star.filled {
+  color: #ffd700;
+}
+
+.half-star {
+  font-size: 1.2rem;
+  color: #ffd700;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-name {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-feedback {
+    font-size: 0.85rem;
+  }
+}
