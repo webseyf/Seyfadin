@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: #192231; /* Dark background */
+  
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  position: relative;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #ffffff;
+  font-size: 2rem; /* Larger font for the logo */
+  font-weight: 700; /* Bold logo for emphasis */
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.1); /* Slight scaling effect on hover */
+  color: #4db8ff; /* Logo color change on hover */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px; /* Rounded corners for a softer look */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #4db8ff; /* Light blue background on hover */
+  color: #ffffff; /* Ensure text remains white */
+}
+
+.menu-toggle {
+  display: none; /* Hidden by default for larger screens */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #ffffff;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Initially hidden */
+      position: absolute;
+      top: 70px; /* Positioning below the navbar */
+      right: 0; /* Align to the right */
+      background-color: #192231; /* Dark background */
+      flex-direction: column; /* Stack links vertically */
+      gap: 50px; /* Space between links */
+      width: 60%; /* Full width */
+      padding: 1rem 0; /* Vertical padding for links */
+      z-index: 1000; /* Ensure it appears above other content */
+      box-shadow: 0 4px 15px rgb(0, 0, 0); /* Subtle shadow for depth */
+      border-radius: 0 0 10px 10px; /* Round bottom corners */
+      min-height: 98vh; /* Full height for mobile menu */
+  }
+
+  .nav-links.active {
+      display: flex; /* Show the menu when active */
+  }
+
+  .nav-links li {
+      text-align: center; /* Center align text */
+      padding: 1rem 0; /* Padding for touch targets */
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Divider between items */
+  }
+
+  .nav-links a {
+      color: #ffffff; /* White text color */
+      font-size: 1.2rem; /* Slightly larger font size for readability */
+      transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+
+  .nav-links a:hover {
+      background-color: #4db8ff; /* Light blue background on hover */
+      color: #ffffff; /* Ensure text remains white */
+  }
+
+  .menu-toggle {
+      display: flex; /* Show toggle button */
+      flex-direction: column; /* Stack bars vertically */
+      cursor: pointer; /* Pointer cursor */
+      z-index: 1010; /* Ensure it is above the menu */
+      padding: 0.5rem; /* Padding for better touch area */
+  }
+
+  .menu-toggle:focus {
+      outline: none; /* Remove default focus outline */
+  }
+.icon{
+  font-size: 33px;
+}
+  .menu-toggle .bar {
+      height: 3px; /* Bar height */
+      width: 25px; /* Bar width */
+      background-color: #ffffff; /* Bar color */
+      margin: 4px; /* Margin between bars */
+      transition: background-color 0.3s ease; /* Smooth color transition */
+  }
+
+  .menu-toggle .bar:hover {
+      background-color: #4db8ff; /* Change color on hover for bars */
+  }
+}

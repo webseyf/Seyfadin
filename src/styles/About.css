@@ -1,0 +1,129 @@
+.about-section {
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.about-box {
+  background-color: #161f30;
+  padding: 40px;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  position: relative;
+  /* animation: fadeInUp 1.5s ease-out forwards; */
+}
+
+.about-box::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 15px;
+  background: linear-gradient(270deg, #2c3c58, #313c4e, #20314d, #1c3153);
+  background-size: 400% 400%;
+  animation: borderGlow 4s ease infinite;
+  z-index: -1; /* Ensures the border stays behind the content */
+}
+
+.about-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-item {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUpItem 1s ease-out forwards;
+  margin-bottom: 20px;
+}
+
+.about-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.about-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.about-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.about-item:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.about-item:nth-child(5) {
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUpItem {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes borderGlow {
+  0% {
+    background-position: 400% 0%;  /* Start the gradient from the far right */
+  }
+  25% {
+    background-position: 100% 50%;  /* Shift the gradient to the bottom-right */
+  }
+  50% {
+    background-position: 0% 100%;  /* Move the gradient to the bottom-left */
+  }
+  75% {
+    background-position: -100% 50%;  /* Move the gradient to the top-left */
+  }
+  100% {
+    background-position: 400% 0%;  /* Complete the cycle with the gradient back to the far right */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .about-box {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-item {
+    font-size: 1.1rem;
+  }
+}
