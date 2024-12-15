@@ -31,8 +31,8 @@ const Projects = () => {
   
 
   return (
-    <section className="projects">
-      <h2 className="section-title">Some of My Work!</h2>
+    <section className="projects" id="projects">
+      <h2 className="sec-title">Some of My Work!</h2>
       <div className="projects-grid">
         {projectData.map((project, index) => (
           <div key={index} className="project-card">

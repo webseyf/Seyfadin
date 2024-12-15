@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import Social from './Social';
 
 const Contact = () => {
   return (
     <StyledWrapper>
+      <div className="full" id="contact">
       <div className="form-container">
         <div className="form-card">
           <form
@@ -48,6 +50,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <Social/>
+      </div>
     </StyledWrapper>
   );
 };
@@ -56,7 +60,7 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  margin: 3rem 0;
   
   padding: 2rem;
 
@@ -81,11 +85,19 @@ const StyledWrapper = styled.div`
   }
 
   .form-heading {
+  display: flex;
+  
     text-align: center;
     font-size: 1.8rem;
     color: #64ffda;
   }
-
+  
+.full{
+display: flex;
+flex-direction: row;
+gap: 2rem;
+justify-content:center;
+}
   .form-description {
     text-align: center;
     font-size: 1rem;
@@ -150,7 +162,14 @@ const StyledWrapper = styled.div`
     .form-heading {
       font-size: 1.5rem;
     }
-
+@media (max-width: 768px) {
+.full{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+justify-content:center;
+}
+}
     .form-description {
       font-size: 0.9rem;
     }

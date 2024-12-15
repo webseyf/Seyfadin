@@ -10,3 +10,7 @@ body{
   align-items: center;
   min-height: 100vh; */
 } 
+a{
+  text-decoration: none;
+  text-decoration-line: none;
+}

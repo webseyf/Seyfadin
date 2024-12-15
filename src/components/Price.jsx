@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Hire from './Hire';
 
 const Price = () => {
   return (
@@ -8,7 +9,7 @@ const Price = () => {
         <h1 className="main-heading">Plans / Negotiable /</h1>
         <p className="sub-heading">Choose the plan that suits your needs</p>
       </Header>
-      <PricingContainer>
+      <PricingContainer className="full">
         {plans.map((plan, index) => (
           <Card key={index} className={plan.type}>
             <h2 className="title">{plan.title}</h2>
@@ -27,6 +28,7 @@ const Price = () => {
           </Card>
         ))}
       </PricingContainer>
+      <Hire/>
     </StyledWrapper>
   );
 };
@@ -65,7 +67,7 @@ const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+
   padding: 2rem;
   background-color:rgb(25, 40, 63);
   color: #ffffff;
@@ -76,9 +78,16 @@ const Header = styled.header`
   margin-bottom: 2rem;
 
   .main-heading {
-    font-size: 3.8rem;
-    font-weight: 900;
-    color: #64ffda;
+     font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
     animation: fadeIn 1.5s ease-out;
   }
 
@@ -105,6 +114,10 @@ const PricingContainer = styled.div`
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
+
+@media (max-width: 768px) {
+flex-direction: column;
+}
 `;
 
 const Card = styled.div`

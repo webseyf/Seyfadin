@@ -64,7 +64,7 @@ Navbar.defaultProps = {
         { href: '#about', text: 'About Me' },
         { href: '#skills', text: 'Skills' },
         { href: '#projects', text: 'Projects' },
-        { href: '#blog', text: 'Blog' },
+        { href: '#services', text: 'Services' },
         { href: '#contact', text: 'Contact' },
     ],
 };
