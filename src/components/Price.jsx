@@ -6,7 +6,7 @@ const Price = () => {
   return (
     <StyledWrapper>
       <Header>
-        <h1 className="main-heading">Plans / Negotiable /</h1>
+        <h1 className="main-heading">Plans /<span> Negotiable</span></h1>
         <p className="sub-heading">Choose the plan that suits your needs</p>
       </Header>
       <PricingContainer className="full">
@@ -90,7 +90,15 @@ const Header = styled.header`
   -webkit-text-stroke-color: white;
     animation: fadeIn 1.5s ease-out;
   }
+span{
+     font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 40px;
 
+  letter-spacing: 1px;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  color: white;
+    }
   .sub-heading {
     font-size: 1.2rem;
     color: #ccd6f6;

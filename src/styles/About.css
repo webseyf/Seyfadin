@@ -25,7 +25,7 @@
   border-radius: 15px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
   position: relative;
-  /* animation: fadeInUp 1.5s ease-out forwards; */
+  overflow: hidden; /* Ensures content doesn't spill over when border adjusts */
 }
 
 .about-box::before {
@@ -39,7 +39,7 @@
   background: linear-gradient(270deg, #f1ce02, #83f304, #e3fc03, #27ff0b);
   background-size: 400% 400%;
   animation: borderGlow 4s ease infinite;
-  z-index: -1; /* Ensures the border stays behind the content */
+  z-index: -2; /* Ensures the border stays behind the content */
 }
 
 .about-list {
@@ -98,25 +98,26 @@
     transform: translateY(0);
   }
 }
+
 @keyframes borderGlow {
   0% {
-    background-position: 400% 0%;  /* Start the gradient from the far right */
+    background-position: 400% 0%; /* Start the gradient from the far right */
   }
   25% {
-    background-position: 100% 50%;  /* Shift the gradient to the bottom-right */
+    background-position: 100% 50%; /* Shift the gradient to the bottom-right */
   }
   50% {
-    background-position: 0% 100%;  /* Move the gradient to the bottom-left */
+    background-position: 0% 100%; /* Move the gradient to the bottom-left */
   }
   75% {
-    background-position: -100% 50%;  /* Move the gradient to the top-left */
+    background-position: -100% 50%; /* Move the gradient to the top-left */
   }
   100% {
-    background-position: 400% 0%;  /* Complete the cycle with the gradient back to the far right */
+    background-position: 400% 0%; /* Complete the cycle with the gradient back to the far right */
   }
 }
 
-
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .about-box {
     width: 90%;
@@ -127,10 +128,38 @@
     font-size: 2.5rem;
     text-align: center;
   }
+
   .about-section {
     text-align: left;
   }
+
   .about-item {
     font-size: 1.1rem;
+  }
+}
+
+/* Specific styles for devices under 400px */
+@media (max-width: 400px) {
+  .about-box {
+    width: calc(100% - 20px); /* Ensures the box stays 10px away from the edges */
+    padding: 20px;
+  }
+
+  .about-box::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* border-radius: 0; Removes border rounding to align with the device edges */
+  }
+
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .about-item {
+    font-size: 1rem;
+    margin-bottom: 15px;
   }
 }

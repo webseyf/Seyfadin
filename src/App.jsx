@@ -12,6 +12,8 @@ import Services from './components/Services.jsx';
 import Price from './components/Price.jsx';
 import Contact from './components/Contact.jsx';
 
+import './App.css'
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -39,6 +41,8 @@ function App() {
       <div id="services"><Services /></div>
       <div id="pricing"><Price /></div>
       <div id="contact"><Contact /></div>
+      
+
       <Footer />
     </div>
   );

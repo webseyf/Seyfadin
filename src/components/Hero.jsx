@@ -5,7 +5,7 @@ const Hero = () => {
     const [titleIndex, setTitleIndex] = useState(0);
     
     // Original titles
-    const originalTitles = ['Seyfadin Abdelah', 'Website  Developer  ', 'Frontend Developer', 'ReactJs  Developer  '];
+    const originalTitles = [' Seyfadin  🎉Abdela', 'Website  Developer  ', 'Frontend Developer', 'ReactJs  Developer  '];
     
     // Preprocess titles to make them equal in length
     const maxLength = Math.max(...originalTitles.map(title => title.trim().length));

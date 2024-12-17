@@ -94,8 +94,8 @@ const StyledWrapper = styled.div`
     transition: all 0.3s;
     /* if you find some problems change w - h : 30px*/
     padding: 1rem;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 100%;
     color: rgb(255, 174, 0);
     fill: currentColor;
@@ -165,7 +165,14 @@ const StyledWrapper = styled.div`
     .card ul{
       flex-direction: row;
     }
-
+.cexQFg {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 0.5rem;
+}
   }
     .iso-pro:hover span:nth-child(3) {
     opacity: 0.6;

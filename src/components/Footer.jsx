@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Footer.css';
+import Loved from './Loved';
+import Like from './Like';
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,13 +24,17 @@ const Footer = () => {
 
   return (
     <footer className="footer">
+      <div className="love">
+        <span><Loved/></span>
+        <span ><Like/></span>
+        </div>
       <div className="footer-content">
         <nav>
           <ul className="footer-links">
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">About Us</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           </ul>
         </nav>
         <p className="footer-text">
@@ -45,3 +51,12 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+
+
+
+
+
+

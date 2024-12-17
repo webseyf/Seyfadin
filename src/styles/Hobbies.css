@@ -77,7 +77,9 @@
     flex-direction: column;
     margin-bottom: 3rem;
   }
-
+  .hobbies {
+    padding: 4rem 1.4rem;
+  }
   .hobby-content {
     text-align: center;
     padding: 1rem;
@@ -91,6 +93,35 @@
     font-size: 1.8rem;
   }
 
+  .hobby-description {
+    font-size: 1rem;
+  }
+
+  .hobby-fun-fact {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 400px) {
+  .hobby-row {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .hobby-content {
+    text-align: center;
+    padding: 0.3rem;
+  }
+
+  .hobby-image-container {
+    margin-top: 1rem;
+  }
+
+  .hobby-title {
+    font-size: 1.8rem;
+  }
+  .hobbies {
+    padding: 4rem 1.2rem;
+  }
   .hobby-description {
     font-size: 1rem;
   }

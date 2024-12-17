@@ -109,12 +109,20 @@ flex-wrap: wrap;
 align-items: center;
 margin: 4rem auto;
 gap: 2rem;
+
 }
+@media(max-width: 700px){
+padding: 1.5rem;
+}
+@media(max-width: 400px){
+padding: 2rem;
+}
+
 .title{
 display: flex;
 
 justify-content: center;
- font-size: 2.5rem;
+ font-size: 2rem;
   font-weight: 700;
   margin-bottom: 40px;
   text-transform: uppercase;

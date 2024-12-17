@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="form-card">
           <form
             className="form"
-           action="https://formspree.io/f/xdkovoqj"
+    action="https://formspree.io/f/mvgojrjj"
   method="POST"
           >
             <h2 className="form-heading">Get In Touch</h2>
@@ -62,7 +62,7 @@ const StyledWrapper = styled.div`
   align-items: center;
   margin: 3rem 0;
   
-  padding: 2rem;
+  padding: 1rem;
 
   .form-container {
     width: 100%;

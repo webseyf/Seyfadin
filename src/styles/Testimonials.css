@@ -115,7 +115,23 @@
     font-size: 0.85rem;
   }
 }
+@media (max-width: 400px) {
+  .section-title {
+    font-size: 2rem;
+  }
 
+  .testimonial-card {
+   padding: 0.5rem;
+  }
+
+  .testimonial-name {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-feedback {
+    font-size: 0.95rem;
+  }
+}
 
 
 
