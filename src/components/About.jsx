@@ -7,11 +7,11 @@ const About = () => {
       <div className="about-box">
       <h2 className="about-title">Who is Seyfadin?</h2>
         <ul className="about-list">
-          <li className="about-item">Frontend Developer with a passion for <strong>user-centric designs</strong>.</li>
-          <li className="about-item">Specialized in <strong>React, JavaScript</strong>, and modern web technologies.</li>
-          <li className="about-item">Focused on creating <strong>intuitive, responsive, and visually stunning</strong> interfaces.</li>
-          <li className="about-item">Exploring the latest <strong>tech trends</strong> and enhancing my <strong>photography skills</strong>.</li>
-          <li className="about-item">Always learning and pushing creative boundaries to build <strong>better user experiences</strong>.</li>
+          <li className="about-item">Frontend Developer with a passion for user-centric designs.</li>
+          <li className="about-item">Specialized in React, JavaScript, and modern web technologies.</li>
+          <li className="about-item">Focused on creating intuitive, responsive, and visually stunning interfaces.</li>
+          <li className="about-item">Exploring the latest tech trends and enhancing my photography skills.</li>
+          <li className="about-item">Always learning and pushing creative boundaries to build better user experiences.</li>
         </ul>
       </div>
     </section>
