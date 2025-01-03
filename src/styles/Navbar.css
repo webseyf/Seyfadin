@@ -8,7 +8,9 @@ body {
   
   max-width: 1100px;
   margin: 0 auto;
+  margin-top: -30px;
   padding: 1rem 2rem;
+  max-height: 32px;
   position: relative;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
@@ -69,6 +71,9 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .navbar{
+    margin-top: 0;
+  }
   .nav-links {
       display: none; /* Initially hidden */
       position: absolute;

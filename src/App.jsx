@@ -9,10 +9,13 @@ import Projects from './components/Project.jsx';
 import Testimonials from './components/Testimonials.jsx';
 import Hobbies from './components/Hobbies.jsx';
 import Services from './components/Services.jsx';
-import Price from './components/Price.jsx';
+
+//import Price from './components/Price.jsx';
 import Contact from './components/Contact.jsx';
 
 import './App.css'
+import WhyMe from './components/whyme.jsx';
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,11 +38,12 @@ function App() {
       <div id="hero"><Hero /></div>
       <div id="about"><About /></div>
       <div id="skills"><Skills /></div>
+      <div id="whyme"><WhyMe /></div>
       <div id="projects"><Projects /></div>
       <div id="testimonials"><Testimonials /></div>
       <div id="hobbies"><Hobbies /></div>
       <div id="services"><Services /></div>
-      <div id="pricing"><Price /></div>
+      {/* <div id="pricing"><Price /></div> */}
       <div id="contact"><Contact /></div>
       
 
